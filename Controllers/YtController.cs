@@ -17,7 +17,8 @@ namespace ytVideosDownload.Controllers
     [ApiController]
     public class YtController : ControllerBase
     {
-        [HttpPost("download")]
+        [HttpGet]
+        [Route("download")]
         public async Task<IActionResult> DownloadVideoAsync(string youtubeLink)
         {
             try
